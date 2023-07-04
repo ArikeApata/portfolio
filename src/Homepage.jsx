@@ -87,47 +87,35 @@ const Homepage = ({ projects, submit }) => {
                 including my skillset as a programmer
               </p> */}
               <div className="about-description">
-                <div className="row ">
-                  <div className="col-6">
-                    <h5 className="">Who am I?</h5>
-                    <p className="about-text">
-                      Passionate about crafting exceptional web experiences, I
-                      am a dedicated and detail-oriented web developer. With a
-                      keen eye for design and a strong command of coding
-                      languages such as HTML, CSS, and JavaScript, I have the
-                      skills to transform your digital dreams into reality. From
-                      concept to execution, I thrive on bringing innovative
-                      ideas to life. I take a holistic approach to web
-                      development, ensuring that every website I create is not
-                      only visually stunning but also highly functional and
-                      user-friendly. I believe in the power of seamless user
-                      experiences and strive to create intuitive interfaces that
-                      leave a lasting impression on visitors. With a focus on
-                      responsive design, I ensure that your website looks
-                      amazing and performs flawlessly across all devices.
-                      Whether it's a sleek corporate site, a dynamic e-commerce
-                      platform, or a creative portfolio, I tailor each project
-                      to reflect your unique brand identity and goals. I thrive
-                      on challenges and enjoy finding innovative solutions to
-                      complex problems.
-                    </p>
-                    <a href="#contact" className=" btn project-button">
-                      Contact
-                    </a>
-                  </div>
-                  <div className="col-6 mb-3">
-                    <h5 className="skills">What I do</h5>
-                    <Skills />
-                  </div>
+                <div className="about-left">
+                  <h5 className="">Who am I?</h5>
+                  <p className="about-text">
+                    Passionate web developer, weaving innovation and artistry
+                    into every line of code. With an eye for captivating design
+                    and a commitment to seamless user experiences, I bring
+                    digital visions to life. From dynamic e-commerce platforms
+                    to sleek corporate websites, I craft tailored solutions that
+                    leave a lasting impact. Let's collaborate and transform your
+                    online presence into something extraordinary.
+                  </p>
+                  <a href="#contact" className=" btn project-button">
+                    Contact
+                  </a>
+                </div>
+                <div className="about-right mb-3">
+                  <h5 className="skills">What I do</h5>
+                  <Skills />
                 </div>
               </div>
             </div>
             <div className="works py-3" id="projects">
               <h2 className="projects-heading">Projects</h2>
-              <div className="span"><span></span></div>
+              <div className="span">
+                <span></span>
+              </div>
               {projects && <Projects projects={projects} />}
             </div>
-             <div className="contact py-3" id="contact">
+            <div className="contact py-3" id="contact">
               <h2 className="text-center">Start a Project</h2>
               <form
                 onSubmit={handleSubmit}
@@ -186,10 +174,10 @@ const Homepage = ({ projects, submit }) => {
                   Submit
                 </button>
               </form>
-            </div> 
+            </div>
           </div>
         </div>
-        <Footer /> 
+        <Footer />
       </div>
     </div>
   );
