@@ -4,7 +4,6 @@ import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import axios from "axios";
-import "./style.css";
 
 // import banner from"./banner-image.jpeg"
 

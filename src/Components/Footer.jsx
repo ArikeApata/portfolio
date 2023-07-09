@@ -7,17 +7,17 @@ const Footer = () => {
           </div>
           <div className="background">
             <div class="icon-bar bg-dark">
-              <a href="#" class="facebook">
+              <a href="/" class="facebook">
                 <i class="bi bi-facebook"></i>
               </a>
-              <a href="#" class="twitter">
+              <a href="/" class="twitter">
                 <i class="bi bi-twitter"></i>
               </a>
 
-              <a href="#" class="linkedin">
+              <a href="/" class="linkedin">
                 <i class="bi bi-linkedin"></i>
               </a>
-              <a href="#" class="git">
+              <a href="/" class="git">
                 <i class="bi bi-github"></i>
               </a>
             </div>
