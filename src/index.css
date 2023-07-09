@@ -1,4 +1,6 @@
-*, html, body {
+*,
+html,
+body {
   margin: 0;
   scroll-behavior: smooth;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,10 +18,12 @@
 .home {
   background: #EFF2EF;
 }
-h2{
+
+h2 {
   /* font-size: 20px; */
   text-transform: uppercase;
 }
+
 .banner {
   height: auto;
   width: 100%;
@@ -47,7 +51,7 @@ h2{
   color: white;
 }
 
-.banner p{
+.banner p {
   color: #fff;
 }
 
@@ -60,21 +64,30 @@ h2{
 
 } */
 
-.about-description{
+.about-description {
   display: flex;
   justify-content: space-between;
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .about-text {
   font-size: 11px;
 }
-.about-left{
-  width: 48%;text-align: justify;
+
+.about-left {
+  width: 48%;
+  text-align: justify;
 }
+
 .about-right {
   width: 48%;
   margin: 0 auto;
 }
-.about h5{
+
+.about h5 {
   text-align: left;
 }
 
@@ -90,6 +103,7 @@ h2{
 .project-button:hover {
   background: #E36397;
 }
+
 .works {
   margin-top: 20px;
   background: inherit;
@@ -103,7 +117,8 @@ h2{
   text-align: center;
   /* margin-top: 20px; */
 }
-.works .span{
+
+.works .span {
   margin: auto;
   /* border-bottom: 2px solid #E36397; */
 }
@@ -162,6 +177,7 @@ h2{
 .footer {
   font-size: 11px;
 }
+
 .background {
   background-color: #BC8DA7;
   border: 2px solid black;
@@ -194,7 +210,7 @@ h2{
 
 .bi-facebook {
   color: #3B5998;
-  
+
   /* color: white; */
 }
 
