@@ -63,7 +63,7 @@ const Homepage = ({ projects, submit }) => {
         <div className="nav-section sticky-top">
           <div className="promotion">
             <div className="subscribe-link">
-              <a className="subscribe-link">
+              <a className="subscribe-link" href="/blog">
                 <span className="subscribe-icon">
                   <AiOutlineMail />
                 </span>
