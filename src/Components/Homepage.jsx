@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import axios from "axios";
+import { AiOutlineMail } from "react-icons/ai";
 
 // import banner from"./banner-image.jpeg"
 
@@ -58,8 +59,21 @@ const Homepage = ({ projects, submit }) => {
 
   return (
     <div className="home">
-      <div className=" ">
-        <Navbar />
+      <div className="">
+        <div className="nav-section sticky-top">
+          <div className="promotion">
+            <div className="subscribe-link">
+              <a className="subscribe-link">
+                <span className="subscribe-icon">
+                  <AiOutlineMail />
+                </span>
+                subscribe to weekly newsletter
+              </a>
+            </div>
+          </div>
+
+          <Navbar />
+        </div>
         <div className="content">
           <div className="banner">
             <div class="py-4 hero-image h-100">

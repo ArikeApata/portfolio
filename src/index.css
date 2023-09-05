@@ -6,13 +6,70 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 2.0;
   letter-spacing: 2.0;
-  color: #5a5a5a;
+  /* color: #5a5a5a; */
+}
+
+.navbrand {
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Sacramento',
+    cursive;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
+  background: linear-gradient(90deg, rgb(41, 2, 5) 0%, rgb(7, 0, 2) 100%);
   margin: 0;
+}
+
+.nav-section {
+  width: 100%;
+}
+
+.promotion {
+  background: linear-gradient(90deg, rgb(248, 245, 246) 0%, rgb(255, 246, 246) 100%);
+  color: #E36397;
+  width: 100%;
+
+}
+
+.subscribe-link {
+  padding: 0 10px;
+  border-left: 4px solid #000;
+  border-right: 4px solid #000;
+  font-size: 18px;
+  color: #E36397;
+  /* width: 100%; */
+  margin: auto;
+  text-align: center;
+}
+
+.subscribe-icon {
+  padding-right: 5px;
+  font-size: 20px;
+}
+
+.promotion a {
+  /* text-decoration: none; */
+  font-size: 14px;
+
+}
+
+.promotion a:hover {
+  cursor: pointer;
+  color: #0d0046;
+}
+
+.toggle-button {
+  outline: none;
+  border: none;
+}
+
+.toggle-button span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 .home {
@@ -250,7 +307,8 @@ h2 {
   .about-right {
     display: none;
   }
-  .about-left{
+
+  .about-left {
     width: 90%;
     margin: auto;
     justify-content: center;
