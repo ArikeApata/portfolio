@@ -1,5 +1,9 @@
+import Blog from "./Components/Blog";
 import Homepage from "./Components/Homepage";
+import Subscribe from "./Components/subscribe";
 import projects from "./data/db.json";
+
+import { Route, Routes } from "react-router";
 
 function App() {
   // const [info, setinfo] = useState("");
@@ -14,11 +18,12 @@ function App() {
 
   return (
     <div className="App">
-      <div className="content">
-        <Homepage
-          projects={projects}
-        />
-      </div>
+      <Routes>
+        <Route path="/" element={<Homepage projects={projects} />} exact />
+        <Route path="/subscribe" element={<Subscribe/> } />
+
+        <Route path="/blog" element={<Blog/> } />
+      </Routes>
     </div>
   );
 }

@@ -51,7 +51,6 @@ const Navbar = () => {
     // </nav>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        
         <div className="left">
           <a class="navbar-brand navbrand" href="/">
             Apata Priscilla
@@ -72,7 +71,11 @@ const Navbar = () => {
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link text-light active" aria-current="page" href="/">
+                <a
+                  class="nav-link text-light active"
+                  aria-current="page"
+                  href="/"
+                >
                   Home
                 </a>
               </li>
@@ -89,6 +92,11 @@ const Navbar = () => {
               <li class="nav-item">
                 <a class="nav-link text-light" href="#contact">
                   Contact
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="/blog">
+                  Blog
                 </a>
               </li>
             </ul>

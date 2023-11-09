@@ -5,6 +5,7 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import axios from "axios";
 import { AiOutlineMail } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 // import banner from"./banner-image.jpeg"
 
@@ -63,12 +64,16 @@ const Homepage = ({ projects, submit }) => {
         <div className="nav-section sticky-top">
           <div className="promotion">
             <div className="subscribe-link">
-              <a className="subscribe-link" href="/blog">
+              <Link to="/subscribe">
+              
                 <span className="subscribe-icon">
                   <AiOutlineMail />
                 </span>
                 subscribe to weekly newsletter
-              </a>
+             </Link>
+            </div>
+            <div className="discount-sales">
+              
             </div>
           </div>
 

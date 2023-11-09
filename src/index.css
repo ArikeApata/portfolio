@@ -31,10 +31,12 @@ body {
   background: linear-gradient(90deg, rgb(248, 245, 246) 0%, rgb(255, 246, 246) 100%);
   color: #E36397;
   width: 100%;
+  display: flex;
+  justify-content: center;
 
 }
 
-.subscribe-link {
+.subscribe-link a {
   padding: 0 10px;
   border-left: 4px solid #000;
   border-right: 4px solid #000;
@@ -42,13 +44,25 @@ body {
   color: #E36397;
   /* width: 100%; */
   margin: auto;
-  text-align: center;
 }
 
 .subscribe-icon {
   padding-right: 5px;
   font-size: 20px;
+  /* color: #000; */
+  animation: 'subscribe-icon' 1s ease-in-out infinite alternate;
 }
+
+@keyframes subscribe-icon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #670a2c, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #440a27, 0 0 40px #9d2853, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
 
 .promotion a {
   /* text-decoration: none; */
@@ -72,6 +86,18 @@ body {
   font-weight: bolder;
 }
 
+
+
+.subscribe {
+  /* background: #a7892a; */
+  height: 100%;
+
+}
+
+.sign-up:hover {
+  opacity: 0.8;
+}
+
 .home {
   background: #EFF2EF;
 }
@@ -88,7 +114,7 @@ h2 {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)), url("/public/download.jpeg");
+      rgba(0, 0, 0, 0.5)), url("/public/new-image.jpeg");
   height: 100%;
   min-height: 417px;
   width: 100%;
